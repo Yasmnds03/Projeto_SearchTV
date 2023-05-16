@@ -1,0 +1,128 @@
+body {
+	margin: 0;
+}
+
+#container {
+	padding: 50px 0;
+}
+
+#form-area {
+	width: 600px;
+	margin: 0 auto 30px auto;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #fff;
+}
+
+#form-area form {
+	text-align: center;
+}
+
+#query {
+	width: 400px;
+	height: 34px;
+	font-family: 'regular';
+	text-align: center;
+	font-size: 100%;
+	border: 2px solid #9e8181;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+
+#query:focus {
+	outline: 2px solid #c5eff7;
+}
+
+#search-button {
+	padding: 10px 20px;
+	border: none;
+	font-family: bold;
+	font-size: 100%;
+	border-radius: 10px;
+	background-color: #803b80;
+	color: white;
+	cursor: pointer;
+}
+
+#not-found-message {
+	display: none;
+	text-align: center;
+	font-family: 'bold';
+	color: #803b80;
+}
+
+#shows-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.show-card {
+	width: 22%;
+	border-radius: 20px;
+	box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #fff;
+	margin: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.show-card img {
+	cursor: pointer;
+	width: 100%;
+}
+
+.show-card h3 {
+	font-family: 'bold';
+	text-align: center;
+	cursor: pointer;
+}
+
+.show-card a {
+	text-decoration: none;
+	color: black;
+}
+
+#favorites-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#favorites-button {
+	margin-top: 15px;
+	padding: 10px 20px;
+	border: none;
+	font-family: bold;
+	font-size: 90%;
+	border-radius: 10px;
+	background-color: #803b80;
+	color: white;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+	#container {
+		padding: 20px 0;
+	}
+
+	#form-area {
+		width: 80%;
+	}
+
+	#form-area form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#query {
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+
+	.show-card {
+		width: 100%;
+	}
+}

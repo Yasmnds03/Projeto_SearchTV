@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>TV Search</title>
+</head>
+<body>
+    <div id="container">
+        <div id="form-area">
+            <form onsubmit="searchShows(event)">
+                <input type="text" id="query" placeholder="Digite o título do show">
+        
+                <input id="search-button" type="submit" value="Procurar">
+                <button id="favorites-button" onclick="window.location.href = '/favorites.html'">Favoritos</button>
+            </form>
+
+        </div>
+        
+        <h2 id="not-found-message">Nenhum show encontrado</h2>
+
+        <div id="shows-area"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
